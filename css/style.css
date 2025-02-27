@@ -848,6 +848,8 @@
     margin-bottom: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
     border: none;
+    color: #fff;
+    background-color: #04272b;
 }
 
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
@@ -857,7 +859,7 @@
 }
 
 .faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: var(--bs-dark);
+    color: var(--bs-white);
     background: var(--bs-light);
 }
 /*** FAQs End ***/
