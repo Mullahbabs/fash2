@@ -552,7 +552,7 @@
 .banner {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/images/fashion_blog_runway_model-min-1024x576.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
