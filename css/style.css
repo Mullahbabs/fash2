@@ -628,7 +628,7 @@
     margin-right: -1px;
 }
 .service .nav-item a.active {
-    background: var(--bs-primary);
+    background: #04272b;
 }
 
 .service .nav-item a span {
@@ -644,7 +644,7 @@
     position: absolute;
     padding: 10px 35px;
     border: 1px solid var(--bs-primary);
-    color: var(--bs-dark);
+    color: #04272b;
     background: var(--bs-light);
     transition: 0.5s;
 }
@@ -690,11 +690,7 @@
 
 /*** Projects Start ***/
 .projects .nav-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .09);
-}
-
-.projects-item .projects-content {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.09);
 }
 
 .projects .nav-item a.active {
@@ -716,6 +712,16 @@
 .projects .nav-item a.active .projects-icon span {
     color: var(--bs-primary);
 }
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-body video {
+    border-radius: 10px;
+}
+
 /*** Projects End ***/
 
 
