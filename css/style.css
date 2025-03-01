@@ -436,7 +436,7 @@
 }
 
 .hero-shape-1:before {
-    background-color: var(--bs-dark);
+    background-color: #04272b;
     content: "";
     width: 50%;
     height: 80%;
@@ -446,7 +446,7 @@
 }
 
 .hero-shape-2 {
-    background-color: var(--bs-dark);
+    background-color: #04272b;
     width: 150px;
     height: 50%;
     position: absolute;
@@ -530,7 +530,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/images/dealbg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -594,7 +594,7 @@
     height: 500px;
     top: -165px;
     left: 0;
-    background: var(--bs-dark);
+    background: #04272b;
     transform: rotate(45deg);
     z-index: 2;
 }
@@ -605,7 +605,7 @@
     height: 500px;
     bottom: -165px;
     right: 0;
-    background: var(--bs-dark);
+    background: #04272b;
     transform: rotate(45deg);
     z-index: 2;
 }
@@ -903,7 +903,7 @@
 .testimonial .testimonial-item .testimonial-inner {
     display: flex;
     align-items: center;
-    background: var(--bs-white);
+    background: snow;
 }
 
 .testimonial .testimonial-item .testimonial-inner img {
