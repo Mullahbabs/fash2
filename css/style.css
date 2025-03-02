@@ -1092,13 +1092,20 @@ p {
 }
 
 /* Our Story */
+.our-story {
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 2rem 0;
+}
 .our-story img {
-    border-radius: 15px;
+    position: relative;
+    border-radius: 20px;
 }
 
 .our-story p {
     font-size: 1.1rem;
 }
+
 
 /* Fashion Industry */
 .fashion-industry {
@@ -1139,9 +1146,9 @@ p {
 }
 
 .testimonial1 {
-    background-color: #fff;
+    background-color: #04272b;
     border: 1px solid #ddd;
-    color: #444;
+    color: var(--bs-primary);
     font-style: italic;
 }
 
