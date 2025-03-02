@@ -549,10 +549,12 @@
 
 
 /*** Banner Start ***/
+/* Banner and Background Structure */
 .banner {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/images/fashion_blog_runway_model-min-1024x576.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url(../img/images/fashion_blog_runway_model-min-1024x576.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -564,50 +566,102 @@
     z-index: 99;
 }
 
-.banner::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 500px;
-    top: -200px;
-    left: 0;
-    background: var(--bs-primary);
-    transform: rotate(45deg);
-    z-index: 1;
-}
-
+.banner::after,
 .banner::before {
     content: "";
     position: absolute;
     width: 100px;
     height: 500px;
-    bottom: -200px;
-    right: 0;
     background: var(--bs-primary);
     transform: rotate(45deg);
     z-index: 1;
 }
 
-.banner .banner-design-1 {
+.banner::after {
+    top: -200px;
+    left: 0;
+}
+
+.banner::before {
+    bottom: -200px;
+    right: 0;
+}
+
+.banner .banner-design-1,
+.banner .banner-design-2 {
     position: absolute;
     width: 30px;
     height: 500px;
-    top: -165px;
-    left: 0;
     background: #04272b;
     transform: rotate(45deg);
     z-index: 2;
 }
 
+.banner .banner-design-1 {
+    top: -165px;
+    left: 0;
+}
+
 .banner .banner-design-2 {
-    position: absolute;
-    width: 30px;
-    height: 500px;
     bottom: -165px;
     right: 0;
-    background: #04272b;
-    transform: rotate(45deg);
-    z-index: 2;
+}
+
+/* Video Modal and Play Button */
+.video-modal {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+
+.play-btn {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #04272b;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.473);
+    color: var(--bs-primary);
+    font-size: 36px;
+    line-height: 80px;
+    text-align: center;
+    animation: bounce 1.5s infinite ease-in-out;
+    z-index: 99;
+}
+
+.play-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: radiate 1.5s infinite ease-in-out;
+    z-index: -1;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Modal Styling */
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 450px;
 }
 /*** Banner End ***/
 
@@ -720,6 +774,14 @@
 
 .modal-body video {
     border-radius: 10px;
+}
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 450px;
 }
 
 /*** Projects End ***/
@@ -1005,6 +1067,101 @@
     color: var(--bs-primary);
 }
 /*** Footer End ***/
+
+/* General Styling */
+.about-page {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #04272b;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Mission Statement */
+.mission-statement {
+    background-color: #04272b;
+    color: #fff;
+}
+
+/* Our Story */
+.our-story img {
+    border-radius: 15px;
+}
+
+.our-story p {
+    font-size: 1.1rem;
+}
+
+/* Fashion Industry */
+.fashion-industry {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    text-align: justify;
+}
+.fashion-industry h2 {
+    color: var(--bs-primary);
+    text-align: left;
+}
+.fashion-industry p {
+    text-align: justify;
+}
+/* Features & Benefits */
+.features {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/images/dealbg.jpg);
+    opacity: 8;
+}
+
+.feature-card {
+    background-color: #04272b;
+    border: 1px solid var(--bs-primary);
+}
+
+.feature-card h4 {
+    color: var(--bs-primary);
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #fff;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f9f9f9;
+}
+
+.testimonial1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+    font-style: italic;
+}
+
+.testimonial1 footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #04272b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .our-story .row {
+        flex-direction: column;
+    }
+
+    .feature-card, .testimonial1 {
+        margin-bottom: 1.5rem;
+    }
+}
+
 
 /*** copyright Start ***/
 .copyright {
