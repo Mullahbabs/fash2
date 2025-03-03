@@ -1177,6 +1177,42 @@ p {
 }
 /*** copyright end ***/
 
+.projects1-item {
+    position: relative;
+}
+
+.play1-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+.play1-button i {
+    color: var(--bs-primary);
+}
+
+.play1-button:hover {
+    background: var(--bs-primary);
+    color: #fff;
+}
+
+.play1-button:hover i {
+    color: #fff;
+}
+
+
 
 
 
